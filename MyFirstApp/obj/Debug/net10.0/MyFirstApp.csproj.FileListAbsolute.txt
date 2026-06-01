@@ -1,0 +1,15 @@
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\bin\Debug\net10.0\MyFirstApp.exe
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\bin\Debug\net10.0\MyFirstApp.deps.json
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\bin\Debug\net10.0\MyFirstApp.runtimeconfig.json
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\bin\Debug\net10.0\MyFirstApp.dll
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\bin\Debug\net10.0\MyFirstApp.pdb
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\obj\Debug\net10.0\MyFirstApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\obj\Debug\net10.0\MyFirstApp.AssemblyInfoInputs.cache
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\obj\Debug\net10.0\MyFirstApp.AssemblyInfo.cs
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\obj\Debug\net10.0\MyFirstApp.csproj.CoreCompileInputs.cache
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\obj\Debug\net10.0\MyFirstApp.sourcelink.json
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\obj\Debug\net10.0\MyFirstApp.dll
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\obj\Debug\net10.0\refint\MyFirstApp.dll
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\obj\Debug\net10.0\MyFirstApp.pdb
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\obj\Debug\net10.0\MyFirstApp.genruntimeconfig.cache
+C:\Users\dell\Repo\dotnet-learning-journey\MyFirstApp\obj\Debug\net10.0\ref\MyFirstApp.dll
