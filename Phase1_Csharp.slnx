@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Basics/">
+    <Project Path="Basics/MyFirstApp.csproj" />
+  </Folder>
+  <Project Path="OOP/OOP.csproj" />
+</Solution>

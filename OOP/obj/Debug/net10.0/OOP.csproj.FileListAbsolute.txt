@@ -1,0 +1,15 @@
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\bin\Debug\net10.0\OOP.exe
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\bin\Debug\net10.0\OOP.deps.json
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\bin\Debug\net10.0\OOP.runtimeconfig.json
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\bin\Debug\net10.0\OOP.dll
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\bin\Debug\net10.0\OOP.pdb
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\obj\Debug\net10.0\OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\obj\Debug\net10.0\OOP.AssemblyInfoInputs.cache
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\obj\Debug\net10.0\OOP.AssemblyInfo.cs
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\obj\Debug\net10.0\OOP.csproj.CoreCompileInputs.cache
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\obj\Debug\net10.0\OOP.sourcelink.json
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\obj\Debug\net10.0\OOP.dll
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\obj\Debug\net10.0\refint\OOP.dll
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\obj\Debug\net10.0\OOP.pdb
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\obj\Debug\net10.0\OOP.genruntimeconfig.cache
+C:\Users\dell\Repo\dotnet-learning-journey\OOP\obj\Debug\net10.0\ref\OOP.dll
