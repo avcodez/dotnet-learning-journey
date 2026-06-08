@@ -1,6 +1,7 @@
 # dotnet-learning-journey
 Aspiring .NET Backend Developer focused on mastering C# fundamentals, SQL, and ASP.NET Core through hands-on project-based learning. Currently building strong foundations in object-oriented programming, data handling, and web application development while progressively learning advanced concepts like LINQ, DI, and database optimization.
 
+```C#
 -> Command to create solution: dotnet new sln -n SolutionName
 -> Command to add project to solution: dotnet sln add .\MyFirstApp\MyFirstApp.csproj  //path
 -> Command to add project in specific soluion: 
@@ -9,6 +10,7 @@ dotnet sln .\Phase1_CSharp.sln add .\Module2_OOP\Module2_OOP.csproj
 -> Command to list projects in specific solution: dotnet sln .\Phase1_CSharp.sln list
 -> Command to create dotnet project: dotnet new console -n ProjectName
 -> Command to run dotnet project: dotnet run
+```
 
 Note: Same project can belong to multiple solutions
 **Phase 1: C# Fundamentals**

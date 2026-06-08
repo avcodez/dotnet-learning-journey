@@ -1,107 +1,81 @@
-﻿/** 
-#Code:
-class Employee {
-    string name;
-    int age;
-}
-
-Employee e1 = new Employee();
-//e1 is a reference pointing to that object.
-e1.name = "Alice";
-
-#Above code throws error: CS8803 - Top-level statements must precede namespace and type declarations.
-
-#Reason:
-Top-Level Statements (C# 9 / .NET 6+):
-Top-Level Statements allow executable code to be written directly in Program.cs without explicitly creating a Program class or Main() method.
-The compiler automatically generates the Program class and Main() method behind the scenes.Before C# 9, every program required a Main() method:
-
-class Program
-{
-    static void Main()
-    {
-        Console.WriteLine("Hello");
-    }
-}
-
-Now you can write: Console.WriteLine("Hello"); and the compiler automatically generates the Program class and Main() method behind the scenes.
-
-Rule:
-When using top-level statements, the order must be:
-
-1. Using statements
-2. Top-level code
-3. Class/Interface/Enum declarations
-
-Valid:
-Employee e1 = new Employee();
-
-class Employee { }
-
-Top-level code comes before class declaration.
-
-Invalid
-class Employee { }
-
-Employee e1 = new Employee();
-
-Reason: The compiler expects - 
-
-Using statements
-↓
-Top-level code
-↓
-Type declarations (class/interface/enum)
-
-but found:
-
-Type declaration
-↓
-Top-level code
-
-which violates the top-level statement rule.
-**/
-
-Employee e1 = new Employee();
+﻿Employee e1 = new Employee();
 //e1 is a reference pointing to that object.
 e1.name = "Alice";
 e1.age = 30;
-Console.WriteLine(e1.name);
-Console.WriteLine(e1.age);
+Console.WriteLine("\nTop level statementss and not nullable strings:");
+Console.WriteLine("{0}, {1}", e1.name, e1.age);
 
-class Employee {
-    public string name;
-    public int age;
-}
+Console.WriteLine("\nProperties:");
+Student s1 = new Student();
+//s1 is a reference pointing to that object.
+s1.name = "Alice";
+s1.age = 30;
+Console.WriteLine("{0}, {1}", s1.name, s1.age);
+
+Console.WriteLine("Constructor:");
+Person p1 = new Person();
+Console.WriteLine(p1.age);
+Console.WriteLine(p1.name);
+
+Console.WriteLine("\nEncapsulation:");
+BankAccount acc1 = new BankAccount();
+acc1.Balance = 1000; // Valid
+acc1.Balance = -500; // Rejected by setter
+Console.WriteLine("Balance: " + acc1.Balance);
+
+Console.WriteLine("\nInheritance and Polymorphism:");
+OffEmployee emp1 = new OffEmployee();
+emp1.name = "Bob"; // Inherited from Person class
+emp1.Company = "Developer"; // public property defined in OffEmployee to access private field 'company'
+Console.WriteLine("Name: " + emp1.name);
+Console.WriteLine("Company: " + emp1.Company);
+
+Console.WriteLine("\nMethod Overriding:");
+/**
+OffEmployee emp2 = new OffEmployee();
+emp2 = new Person(); // Creates a new Person object
+
+Error: Cannot implicitly convert type 'Person' to 'OffEmployee'. An explicit conversion exists (are you missing a cast?)
+Reason: emp2 is ONLY allowed to hold OffEmployee objects (or its children).
+Solution: Use a base class reference to hold the object.
+**/
+
+Person p2 = new OffEmployee();
+p2.age = 25; // Inherited from Person class
+Console.WriteLine("case 1: Person class object decalred and Employee object assigned: " + p2.CalculateBirthYear()); // Calls overridden method in OffEmployee class
+
+p2 = new Person(); // Creates a new Person object
+Console.WriteLine("case 2: Reassigned Person object to previous reference of Person class: " + p2.CalculateBirthYear()); // Calls the base class method
+
+Person p3 = new Person();
+p3=p2; // p3 now references the same object as p2, which is a Person object
+Console.WriteLine("case 3: New Person class object declared and previous Person object copied: " + p3.CalculateBirthYear()); // Calls the base class method, since p3 references a Person object
+
+p3 = new OffEmployee();
+Console.WriteLine("case 4: New OffEmployee object assigned to Person reference: " + p3.CalculateBirthYear()); // Calls the overridden method in OffEmployee class,
+
+Person p4 = new OffEmployee();
+p4=p2; // p4 now references the same object as p2, which is a Person object
+Console.WriteLine("case 5: Person class object declared and Person object assigned: " + p4.CalculateBirthYear()); // Calls the base class method, since p4
 
 /**
-Warning :  
-Non-nullable field 'name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+Output:
+case 1: Person class object decalred and Employee object assigned: Eligible for job application
+case 2: Reassigned Person object to previous reference of Person class: Birth year: 2026
+case 3: New Person class object declared and previous Person object copied: Birth year: 2026
+case 4: New OffEmployee object assigned to Person reference: Eligible for job application
+case 5: Person class object declared and Person object assigned: Birth year: 2026
+**/
 
-Reason :
-This warning appeared because Nullable Reference Types were introduced in C# 8 to reduce NullReferenceExceptions, one of the most common runtime errors in .NET applications
+/**
+In C#, classes are reference types. 
+Assignment does not create a new object; it only copies the reference, meaning multiple variables can point to the same object in memory.
+Object lives in heap:
+[ OffEmployee OBJECT in HEAP ]
+        ↑
+        |
+      p2
+        |
+      p3   (same address)
 
-Fix 1: Initialize the fields in the constructor: public string name = "";
-Fix 2: Make the fields nullable: public string? name;
-Fix 3: Use the 'required' modifier (C# 11+): public required string name;
-Fix 4: Use constructor to set values: public Employee() { name = ""; }
-
-Why int can't be null or does not get warning?
-int is a value type and cannot contain null. Its default value is 0, which is a valid int value. Therefore, the compiler does not issue a warning because the field is initialized with a valid default value.
-string is a reference type and its default value is null. 
-
-With Nullable Reference Types enabled (C# 8+), a declaration like: string name; means "name should never be null".
-When an Employee object is created, name is initially null, so the compiler warns that the non-nullable contract may be violated.
-Thus,
-
-| Declaration         | Category                      | Default Value | Can Be Null?     | Notes                              |
-| ------------------- | ----------------------------- | ------------- | ---------------- | ---------------------------------- |
-| `int age`           | Value Type                    | `0`           | ❌ No             | Must always contain a value        |
-| `int? age`          | Nullable Value Type           | `null`        | ✅ Yes            | Shorthand for `Nullable<int>`      |
-| `Nullable<int> age` | Nullable Value Type           | `null`        | ✅ Yes            | Equivalent to `int?`               |
-| `string name`       | Reference Type (Non-Nullable) | `null`        | ✅ Physically yes | Compiler warns if it may be `null` |
-| `string? name`      | Nullable Reference Type       | `null`        | ✅ Yes            | Explicitly allows `null`           |
-
-
-int? age = null; or Nullable<int> age = null; both are equivalent and allow age to be null, while int age = null; is invalid because int cannot be null.
-
+**/
