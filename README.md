@@ -4,7 +4,7 @@ Aspiring .NET Backend Developer focused on mastering C# fundamentals, SQL, and A
 ```C#
 -> Command to create solution: dotnet new sln -n SolutionName
 -> Command to add project to solution: dotnet sln add .\MyFirstApp\MyFirstApp.csproj  //path
--> Command to add project in specific soluion: 
+-> Command to add project in specific solution: 
 dotnet sln .\Phase1_CSharp.sln add .\Module2_OOP\Module2_OOP.csproj
 -> Command to list sln files: dotnet sln list
 -> Command to list projects in specific solution: dotnet sln .\Phase1_CSharp.sln list

@@ -1,0 +1,15 @@
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\obj\Debug\net10.0\AdvFundamentals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\obj\Debug\net10.0\AdvFundamentals.AssemblyInfoInputs.cache
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\obj\Debug\net10.0\AdvFundamentals.AssemblyInfo.cs
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\obj\Debug\net10.0\AdvFundamentals.csproj.CoreCompileInputs.cache
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\obj\Debug\net10.0\AdvFundamentals.sourcelink.json
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\bin\Debug\net10.0\AdvFundamentals.exe
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\bin\Debug\net10.0\AdvFundamentals.deps.json
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\bin\Debug\net10.0\AdvFundamentals.runtimeconfig.json
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\bin\Debug\net10.0\AdvFundamentals.dll
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\bin\Debug\net10.0\AdvFundamentals.pdb
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\obj\Debug\net10.0\AdvFundamentals.dll
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\obj\Debug\net10.0\refint\AdvFundamentals.dll
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\obj\Debug\net10.0\AdvFundamentals.pdb
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\obj\Debug\net10.0\AdvFundamentals.genruntimeconfig.cache
+C:\Users\dell\Repo\dotnet-learning-journey\AdvFundamentals\obj\Debug\net10.0\ref\AdvFundamentals.dll

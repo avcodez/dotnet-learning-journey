@@ -2,5 +2,6 @@
   <Folder Name="/Basics/">
     <Project Path="Basics/MyFirstApp.csproj" />
   </Folder>
+  <Project Path="AdvFundamentals/AdvFundamentals.csproj" />
   <Project Path="OOP/OOP.csproj" />
 </Solution>

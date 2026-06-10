@@ -79,3 +79,27 @@ Object lives in heap:
       p3   (same address)
 
 **/
+
+Console.WriteLine("\nInterfaces:");
+IAnimal Dog = new Dog();
+Dog.MakeSound(); // Output: Bark
+IAnimal Cat = new Cat();
+Cat.MakeSound(); // Output: Meow
+
+IAnimal[] animal = {new Dog(), new Cat()};
+foreach(IAnimal a in animal){
+    a.MakeSound();
+}
+
+Console.WriteLine("\nAbstract Classes:");
+Mouse m = new Mouse();
+m.MakeSound(); // Output: Squeak
+
+Animal a1 = new Mouse();
+a1.Sleep(); // Output: Sleeping
+
+//Animal a2 = new Animal(); 
+// Error: Cannot create an instance of the abstract class 'Animal'
+
+//Animal.Sleep(); 
+// Error: An object reference is required for the **non-static** field, method, or property 'Animal.Sleep()'
