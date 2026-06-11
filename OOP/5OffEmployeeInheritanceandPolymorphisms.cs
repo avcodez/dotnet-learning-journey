@@ -1,4 +1,3 @@
-
 //Inheritance allows a child class to reuse the fields, properties, and methods of a parent class, reducing code duplication and promoting reusability.
 /**
 Type	C# Support
@@ -9,29 +8,36 @@ Multiple Inheritance (Classes)	❌ No
 Multiple Inheritance (Interfaces)	✅ Yes
 **/
 
-class OffEmployee : Person{
+class OffEmployee : Person
+{
     double salary;
     string company = "";
 
-    public string Company{
+    public string Company
+    {
         get { return company; }
         set { company = value; }
     }
 
-    int getSalary(){
+    int getSalary()
+    {
         return (int)salary;
     }
 
-    int getSalary(int bonus){
+    int getSalary(int bonus)
+    {
         return (int)salary + bonus;
     }
-    
+
     //override: Replaces the parent implementation.
-    public override string CalculateBirthYear(){
-        if (DateTime.Now.Year - age > 21){
+    public override string CalculateBirthYear()
+    {
+        if (DateTime.Now.Year - age > 21)
+        {
             return "Eligible for job application"; // Valid age
         }
-        else{
+        else
+        {
             return " NOT eligible for job"; // Invalid age
         }
     }
@@ -63,7 +69,7 @@ Rule:
 4. The return type must be the same or covariant (derived type) in the overridden method.
 
 Note:
-COnstructors cannot be overridden, but they can be overloaded. 
-They do not have return types, so they cannot be distinguished by return type alone and are called only when objects are created. 
+COnstructors cannot be overridden, but they can be overloaded.
+They do not have return types, so they cannot be distinguished by return type alone and are called only when objects are created.
 They cannot be marked as virtual or override as they are not inherited like other methods.
 **/

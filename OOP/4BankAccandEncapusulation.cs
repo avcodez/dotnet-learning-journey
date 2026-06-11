@@ -67,8 +67,7 @@ Benifits of Encapsulation:
 6. Easier Debugging: Encapsulation allows for easier identification and fixing of bugs since the internal state is protected and can only be modified through controlled methods.
 7. Reusability: Encapsulated code can be reused across different parts of the application without worrying about unintended side effects, as the internal state is protected.
 Encapsulation is a fundamental principle of object-oriented programming that promotes modularity, maintainability, and security by controlling access to an object's internal state and behavior.
-**/ 
-
+**/
 
 /**
 
@@ -105,19 +104,22 @@ Outside Code
 
 The property is public so other code can read or modify the data in a controlled way through get and set, where validation and business rules can be applied.
  **/
-class BankAccount{
-
+class BankAccount
+{
     private decimal balance;
-    //A field and a property cannot have the same name within the same class. 
+
+    //A field and a property cannot have the same name within the same class.
     // The common convention is to use _balance or balance for the private field and Balance for the public property.
-    public decimal Balance{
-        get {return balance;}
-        set{
-            if(value>=0){
+    public decimal Balance
+    {
+        get { return balance; }
+        set
+        {
+            if (value >= 0)
+            {
                 balance = value;
                 //Assign private field only if the value is valid (non-negative)
             }
         }
     }
-
 }

@@ -1,4 +1,3 @@
-
 //Required member 'Student.name' must be set in the object initializer or attribute constructor.
 
 /**
@@ -56,8 +55,8 @@ Advantage of Properties: Validation logic is centralized inside the class.
 Instead of relying on every developer to validate values before assignment, the class itself ensures that only valid data is stored.
 **/
 
-
-class Student {
+class Student
+{
     public string name = "";
     public int age;
 }

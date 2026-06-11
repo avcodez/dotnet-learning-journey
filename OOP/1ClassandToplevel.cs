@@ -1,4 +1,4 @@
-/** 
+/**
 #Code:
 class Employee {
     string name;
@@ -45,7 +45,7 @@ class Employee { }
 
 Employee e1 = new Employee();
 
-Reason: The compiler expects - 
+Reason: The compiler expects -
 
 Using statements
 ↓
@@ -70,7 +70,7 @@ which violates the top-level statement rule.
 // Console.WriteLine(e1.age);
 
 /**
-Warning :  
+Warning :
 Non-nullable field 'name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
 
 Reason :
@@ -83,7 +83,7 @@ Fix 4: Use constructor to set values: public Employee() { name = ""; }
 
 Why int can't be null or does not get warning?
 int is a value type and cannot contain null. Its default value is 0, which is a valid int value. Therefore, the compiler does not issue a warning because the field is initialized with a valid default value.
-string is a reference type and its default value is null. 
+string is a reference type and its default value is null.
 
 With Nullable Reference Types enabled (C# 8+), a declaration like: string name; means "name should never be null".
 When an Employee object is created, name is initially null, so the compiler warns that the non-nullable contract may be violated.
@@ -101,7 +101,8 @@ Thus,
 int? age = null; or Nullable<int> age = null; both are equivalent and allow age to be null, while int age = null; is invalid because int cannot be null.
 **/
 
-class Employee {
+class Employee
+{
     public string name { get; set; }
     public int age;
 }

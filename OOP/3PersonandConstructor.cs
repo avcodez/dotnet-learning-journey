@@ -1,13 +1,14 @@
 //What is a Constructor?: A constructor is a special method that runs automatically when an object is created.
 // Same name as class, no return type, can be parameterized or non-parameterized.
 
-public class Person {
+public class Person
+{
     public string name;
     public int age;
 
-
     //Default constructor
-    public Person(){
+    public Person()
+    {
         name = "Unknown";
         age = 0;
     }
@@ -15,22 +16,24 @@ public class Person {
     // Parameterized constructor
     // Warning: Assignment made to same variable; did you mean to assign something else?
     // Field 'Person.name' is never assigned to, and will always have its default value null
-    public Person(string name, int age){
+    public Person(string name, int age)
+    {
         name = name;
         this.age = age;
     }
 
     //Constructor overloading
-    public Person(string name){
+    public Person(string name)
+    {
         this.name = name;
         age = 0;
     }
-    
+
     //virtual: Allows a method to be overridden.
-    public virtual string CalculateBirthYear(){
+    public virtual string CalculateBirthYear()
+    {
         return $"Birth year: {DateTime.Now.Year - age}";
     }
-
 }
 
 /**

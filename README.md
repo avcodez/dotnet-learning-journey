@@ -10,6 +10,8 @@ dotnet sln .\Phase1_CSharp.sln add .\Module2_OOP\Module2_OOP.csproj
 -> Command to list projects in specific solution: dotnet sln .\Phase1_CSharp.sln list
 -> Command to create dotnet project: dotnet new console -n ProjectName
 -> Command to run dotnet project: dotnet run
+
+Format: Shift + Alt + F
 ```
 
 Note: Same project can belong to multiple solutions

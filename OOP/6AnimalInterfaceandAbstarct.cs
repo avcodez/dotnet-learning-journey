@@ -1,11 +1,11 @@
 /**
-An interface is a contract that defines what a class must do without specifying how it does it. 
+An interface is a contract that defines what a class must do without specifying how it does it.
 Any class implementing the interface must provide implementations for all its members.
 
 Interfaces typically start with I by convention.
 Interface methods are declared without implementation.
 
-Interface members are implicitly public and abstract. 
+Interface members are implicitly public and abstract.
 Therefore, classes implementing an interface must provide public implementations of all interface members.
 
 Why Use Interfaces?
@@ -55,14 +55,16 @@ class Dog : IAnimal
     }
 }
 
-class Cat : IAnimal{
-/**
-Error:'Cat' does not implement interface member 'IAnimal.MakeSound()'. 
-'Cat.MakeSound()' cannot implement an interface member because it is not public.
-
-Reason: void MakeSound(){} private by default, but interface members must be public.
-**/
-    public void MakeSound(){
+class Cat : IAnimal
+{
+    /**
+    Error:'Cat' does not implement interface member 'IAnimal.MakeSound()'.
+    'Cat.MakeSound()' cannot implement an interface member because it is not public.
+    
+    Reason: void MakeSound(){} private by default, but interface members must be public.
+    **/
+    public void MakeSound()
+    {
         Console.WriteLine("Meow");
     }
 }
@@ -89,7 +91,7 @@ So C# says: ❌ “You are not allowed to create something incomplete”
 
 🔷 2. Why do we need abstract methods?
 
-Abstract class provides partial abstraction, allowing both abstract and concrete methods, 
+Abstract class provides partial abstraction, allowing both abstract and concrete methods,
 while interfaces provide full abstraction (contract only).
 
 ❌ Without abstract class and Only interface:
@@ -98,7 +100,7 @@ interface IAnimal { void MakeSound(); }
 
 Problem: You CANNOT write shared logic
 
-Example: 
+Example:
 Every animal sleeps the same way
 But interface forces every class to rewrite it again ❌
 
@@ -117,16 +119,21 @@ Now:
 ✔ required logic (MakeSound)
 **/
 
-abstract class Animal{
+abstract class Animal
+{
     public abstract void MakeSound();
-    public void Sleep(){
+
+    public void Sleep()
+    {
         Console.WriteLine("Sleeping...");
     }
 }
 
-class Mouse : Animal{
+class Mouse : Animal
+{
     //override is used when a child class changes the implementation of a method that already exists in the parent class.
-    public override void MakeSound(){
+    public override void MakeSound()
+    {
         Console.WriteLine("Squeak");
     }
 }
