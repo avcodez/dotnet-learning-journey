@@ -163,3 +163,4 @@ ListAndDictPractise.ListQue();
 ListAndDictPractise.DictQue();
 Linq.WhylinqQue();
 Linq.linqUse();
+Linq2.linqQue2();
