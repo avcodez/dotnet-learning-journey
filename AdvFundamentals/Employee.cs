@@ -1,7 +1,9 @@
 class Employee
 {
-    public string Name { get; }
-    public int Age { get; }
+    public string Name { get; set; } = "";
+    public int Age { get; set; }
+
+    public Employee() { }
 
     //Private constrctor is used in singleton pattern to prevent external instantiation.
     //Protected constructor is used in inheritance to allow only derived classes to instantiate.

@@ -161,3 +161,5 @@ foreach (var item in emp)
 
 ListAndDictPractise.ListQue();
 ListAndDictPractise.DictQue();
+Linq.WhylinqQue();
+Linq.linqUse();
