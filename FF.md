@@ -1,120 +1,292 @@
-### Phase 1: C# Fundamentals
+# Phase 1: Core C# Fundamentals
 
-Focus on programming logic and core language features.
+Focus: Learn how to think and code like a developer.
 
-1. Variables & Data Types
-2. Operators
-3. If-Else
-4. Loops (`for`, `while`, `foreach`)
-5. Arrays
-6. Methods
-7. Classes & Objects
-8. Constructors
-9. Encapsulation
-10. Inheritance
-11. Polymorphism
-12. Interfaces
-13. Exception Handling
-14. Collections (`List`, `Dictionary`)
-15. LINQ Basics
+Stage 1: Programming Basics
+Variables & Data Types
+Operators
+If-Else
+Loops (for, while, foreach)
+Arrays
+Methods
 
-**Mini Project:** Employee Management Console App
+Stage 2: Object-Oriented Programming
+Classes & Objects
+Constructors
+Encapsulation
+Inheritance
+Polymorphism
+Interfaces
 
----
+Stage 3: Error Handling
+Exception Handling
 
-### Phase 2: SQL Fundamentals
+Stage 4: Collections
+Collections
+List<T>
+Dictionary<TKey,TValue>
 
-A backend developer spends a lot of time working with databases.
+Stage 5: LINQ
+LINQ Basics
+Where()
+Select()
+First()
+FirstOrDefault()
+Any()
+All()
 
-1. Database & Tables
-2. Data Types
-3. INSERT
-4. UPDATE
-5. DELETE
-6. SELECT
-7. WHERE
-8. ORDER BY
-9. GROUP BY
-10. Joins
-11. Subqueries
-12. Views
-13. Stored Procedures
+Mini Project #1: Employee Management Console Application
 
-**Mini Project:** Employee Database Queries
+Features:
+Add Employee
+Remove Employee
+Search Employee
+LINQ Filtering
+Menu Driven Console App
 
----
+# Phase 2: Advanced C# (Critical for ASP.NET Core)
 
-### Phase 3: Frontend Basics
+Focus: Understand the concepts ASP.NET Core uses internally.
 
-You don't need to become a frontend expert initially, but you should understand how the UI talks to APIs.
+Stage 6: Delegates
+Custom Delegates
+Multicast Delegates
+Why Delegates Exist
+Method References
 
-#### HTML
+Stage 7: Action & Func
+Action
+Func
+Predicate
 
-* Tags
-* Forms
-* Tables
-* Semantic Elements
+Stage 8: Lambda Expressions
+Lambda Syntax
+Expression vs Statement Lambdas
+How LINQ Uses Lambdas
 
-#### CSS
+Stage 9: Extension Methods
+Creating Extension Methods
+How LINQ Methods Work
 
-* Selectors
-* Flexbox
-* Grid
-* Responsive Design Basics
+Stage 10: IEnumerable & Deferred Execution
+IEnumerable
+IEnumerator
+Deferred Execution
+Immediate Execution (ToList())
+Collection Pipelines
 
-#### JavaScript
+Stage 11: Generics
+Generic Classes
+Generic Methods
+Generic Collections
+Type Safety
 
-* Variables
-* Functions
-* Arrays
-* Objects
-* DOM Manipulation
-* Fetch API
-* Async/Await
+Stage 12: Events
+Events
+EventHandler
+Publisher/Subscriber Pattern
 
-**Mini Project:** Employee Registration Form
+Stage 13: Async Programming
+Threads vs Tasks
+Task
+async
+await
+ConfigureAwait (Interview Level)
 
----
+Stage 14: Memory & Performance Basics
+Value Types vs Reference Types
+Stack vs Heap
+Boxing & Unboxing
+IDisposable
+using Statement
+Garbage Collection Basics
 
-### Phase 4: Angular Basics
+Mini Project #2
 
-Once JavaScript fundamentals are comfortable.
+Employee Management Pro Console Application
 
-1. Components
-2. Templates
-3. Data Binding
-4. Directives
-5. Services
-6. Dependency Injection
-7. Routing
-8. Forms
-9. HTTP Client
-10. API Integration
+Add:
 
-**Mini Project:** Employee CRUD Angular App
+File Storage
+Logging
+Events
+Async Operations
+Custom Extension Methods
 
----
+# Phase 3: SQL for Backend Developers
 
-### Phase 5: ASP.NET Core Web API
+Focus: Database work used in real APIs.
 
-This is where backend development really starts.
+SQL Basics
+Database & Tables
+Data Types
+INSERT
+UPDATE
+DELETE
+SELECT
+WHERE
+ORDER BY
+GROUP BY
+Intermediate SQL
+Joins
+Subqueries
+Views
+Stored Procedures
+Functions
+Indexes
+Practical SQL
+Real-world Query Writing
+Performance Basics
+Execution Plans (Basic)
+Pagination Queries
 
-1. Controllers
-2. Routing
-3. Model Binding
-4. Validation
-5. Dependency Injection
-6. Middleware
-7. Logging
-8. Entity Framework Core
-9. Authentication & Authorization
-10. Deployment
+Mini Project #3
 
-**Final Project**
+Employee Database System
 
-* Angular Frontend
-* ASP.NET Core Web API
-* SQL Server Database
-* Authentication (JWT)
-* CRUD Operations
-* Deployment
+Employee Table
+Department Table
+Stored Procedures
+Reporting Queries
+
+# Phase 4: Web Fundamentals
+
+Focus: Understand how browsers talk to servers.
+
+HTML
+Tags
+Forms
+Tables
+Semantic HTML
+CSS
+Selectors
+Flexbox
+Grid
+Responsive Design
+JavaScript
+Variables
+Functions
+Arrays
+Objects
+DOM Manipulation
+Fetch API
+Promises
+Async/Await
+
+Mini Project #4
+
+Employee Registration Form
+
+Form Validation
+API Calls
+Dynamic UI
+
+# Phase 5: ASP.NET Core Web API
+
+Focus: Become a backend developer.
+
+API Fundamentals
+Controllers
+Routing
+Action Methods
+Return Types
+Model Binding
+Validation
+Dependency Injection
+Services
+Dependency Injection
+Service Lifetimes
+Singleton
+Scoped
+Transient
+Middleware Pipeline
+Middleware
+Custom Middleware
+Global Exception Handling
+Logging
+Entity Framework Core
+DbContext
+DbSet
+CRUD Operations
+Migrations
+Relationships
+Repository Pattern (Optional)
+Authentication & Security
+Authentication
+Authorization
+JWT
+Claims
+Role-Based Authorization
+API Documentation
+Swagger/OpenAPI
+Testing Basics
+Unit Testing
+Mocking Basics
+Mini Project #5
+
+Employee Management REST API
+
+CRUD
+Validation
+Logging
+JWT Authentication
+SQL Server
+EF Core
+
+# Phase 6: Angular
+
+Focus: Consume APIs professionally.
+
+Angular Core
+Components
+Templates
+Data Binding
+Directives
+Services & DI
+Services
+Dependency Injection
+Forms
+Reactive Forms
+Validation
+Routing
+Routing
+Guards
+API Integration
+HttpClient
+Error Handling
+Interceptors
+Mini Project #6
+
+Employee Management Frontend
+
+Login
+Employee CRUD
+API Integration
+JWT Handling
+
+# Phase 7: Full-Stack Production Project
+Final Project
+
+Employee Management System
+
+Backend:
+
+ASP.NET Core Web API
+SQL Server
+EF Core
+JWT Authentication
+Logging
+Global Exception Handling
+
+Frontend:
+
+Angular
+Reactive Forms
+Route Guards
+API Integration
+
+Deployment:
+
+IIS / Azure
+GitHub
+CI/CD Basics

@@ -3,5 +3,6 @@
     <Project Path="Basics/MyFirstApp.csproj" />
   </Folder>
   <Project Path="AdvFundamentals/AdvFundamentals.csproj" />
+  <Project Path="EmployeeManagementConsole/EmployeeManagementConsole.csproj" />
   <Project Path="OOP/OOP.csproj" />
 </Solution>
