@@ -1,8 +1,11 @@
 <Solution>
-  <Folder Name="/Basics/">
-    <Project Path="Basics/MyFirstApp.csproj" />
+  <Folder Name="/Phase1/" />
+  <Folder Name="/Phase1/Basics/">
+    <Project Path="Phase1/Basics/MyFirstApp.csproj" />
   </Folder>
-  <Project Path="AdvFundamentals/AdvFundamentals.csproj" />
-  <Project Path="EmployeeManagementConsole/EmployeeManagementConsole.csproj" />
-  <Project Path="OOP/OOP.csproj" />
+  <Folder Name="/Phase2/" />
+
+  <Project Path="Phase1/AdvFundamentals/AdvFundamentals.csproj" />
+  <Project Path="Phase1/EmployeeManagementConsole/EmployeeManagementConsole.csproj" />
+  <Project Path="Phase1/OOP/OOP.csproj" />
 </Solution>

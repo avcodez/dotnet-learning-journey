@@ -1,0 +1,15 @@
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\bin\Debug\net10.0\AdvancedCSharp.exe
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\bin\Debug\net10.0\AdvancedCSharp.deps.json
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\bin\Debug\net10.0\AdvancedCSharp.runtimeconfig.json
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\bin\Debug\net10.0\AdvancedCSharp.dll
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\bin\Debug\net10.0\AdvancedCSharp.pdb
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\obj\Debug\net10.0\AdvancedCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\obj\Debug\net10.0\AdvancedCSharp.AssemblyInfoInputs.cache
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\obj\Debug\net10.0\AdvancedCSharp.AssemblyInfo.cs
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\obj\Debug\net10.0\AdvancedCSharp.csproj.CoreCompileInputs.cache
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\obj\Debug\net10.0\AdvancedCSharp.sourcelink.json
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\obj\Debug\net10.0\AdvancedCSharp.dll
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\obj\Debug\net10.0\refint\AdvancedCSharp.dll
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\obj\Debug\net10.0\AdvancedCSharp.pdb
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\obj\Debug\net10.0\AdvancedCSharp.genruntimeconfig.cache
+C:\Users\dell\Repo\dotnet-learning-journey\phase2\AdvancedCSharp\obj\Debug\net10.0\ref\AdvancedCSharp.dll
