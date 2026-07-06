@@ -1,3 +1,11 @@
+Topics covered:
+Why delegates exist
+Method references
+Creating a custom delegate
+Passing methods as parameters
+Comparing hardcoded behavior vs delegate-based behavior
+Relationship between custom delegates and Action
+
 Step 1: Life Without Delegates
 
 Suppose you have:
@@ -119,3 +127,31 @@ Code becomes reusable and extensible.
 This follows the Open/Closed Principle from SOLID:
 
 Software entities should be open for extension but closed for modification.
+
+-----------------------------------------------------------------------
+
+Custom Delegate
+---------------
+I create my own delegate type.
+
+delegate void PrintDelegate();
+Execute(PrintDelegate printer)
+
+Built-in Delegate
+-----------------
+Microsoft has already created common delegates.
+
+Action          -> void, no return
+Action<T>       -> void, with parameters
+Func<T>         -> returns a value
+Predicate<T>    -> returns bool
+
+Instead of creating: delegate void PrintDelegate();
+
+I simply use: Action
+
+***Interview***
+Without delegates, a method often hardcodes which methods it will call using conditions like if or switch. Every time new behavior is added, that method must be modified. Delegates solve this by allowing methods to be passed as parameters. The caller chooses the behavior, while the receiving method simply invokes it. This makes the code more reusable and aligns with the Open/Closed Principle. In modern C#, we usually use the built-in delegates Action, Func, and Predicate instead of creating custom delegates unless a custom delegate name improves readability or expresses domain-specific intent.
+
+
+Based on what you've learned so far, what do you think will happen if one method in the multicast delegate throws an exception before the remaining methods are executed? Think it through before trying it—that behavior is important and often comes up in interviews.

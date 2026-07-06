@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dell\\Repo\\dotnet-learning-journey\\phase2\\AdvancedCSharp\\AdvancedCSharp.csproj": {}
+    "C:\\Users\\dell\\Repo\\dotnet-learning-journey\\Phase2\\AdvancedCSharp\\AdvancedCSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dell\\Repo\\dotnet-learning-journey\\phase2\\AdvancedCSharp\\AdvancedCSharp.csproj": {
+    "C:\\Users\\dell\\Repo\\dotnet-learning-journey\\Phase2\\AdvancedCSharp\\AdvancedCSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell\\Repo\\dotnet-learning-journey\\phase2\\AdvancedCSharp\\AdvancedCSharp.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\Repo\\dotnet-learning-journey\\Phase2\\AdvancedCSharp\\AdvancedCSharp.csproj",
         "projectName": "AdvancedCSharp",
-        "projectPath": "C:\\Users\\dell\\Repo\\dotnet-learning-journey\\phase2\\AdvancedCSharp\\AdvancedCSharp.csproj",
+        "projectPath": "C:\\Users\\dell\\Repo\\dotnet-learning-journey\\Phase2\\AdvancedCSharp\\AdvancedCSharp.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell\\Repo\\dotnet-learning-journey\\phase2\\AdvancedCSharp\\obj\\",
+        "outputPath": "C:\\Users\\dell\\Repo\\dotnet-learning-journey\\Phase2\\AdvancedCSharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
