@@ -9,6 +9,7 @@ class Delegates
 
     public static void RunHardcoded(string val)
     {
+        Console.WriteLine("Harcoded:");
         if (val == "Hello")
             SayHello();
         else if (val == "Bye")

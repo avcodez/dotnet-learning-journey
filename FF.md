@@ -149,7 +149,92 @@ Department Table
 Stored Procedures
 Reporting Queries
 
-# Phase 4: Web Fundamentals
+# Phase 4: ASP.NET Core Web API
+
+Focus: Become a backend developer.
+
+Web Fundamentals:
+HTTP
+HTTPS
+Client-Server Architecture
+Request & Response
+HTTP Methods
+Status Codes
+Headers
+Cookies
+JSON
+REST APIs
+
+
+
+API Fundamentals
+Controllers
+Routing
+Action Methods
+Return Types
+Model Binding
+Validation
+
+Configuration:
+appsettings.json
+IConfiguration
+Environment Variables
+Options Pattern (Basic)
+
+Dependency Injection
+Services
+Service Lifetimes:
+Singleton
+Scoped
+Transient
+
+Middleware Pipeline
+Middleware
+Custom Middleware
+Global Exception Handling
+
+Logging
+
+Entity Framework Core
+DbContext
+DbSet
+CRUD Operations
+Migrations
+Relationships
+Repository Pattern (Optional)
+
+Authentication & Security
+Authentication
+Authorization
+JWT
+Claims
+Role-Based Authorization
+API Documentation
+
+Swagger/OpenAPI
+
+Testing Basics
+Unit Testing
+Mocking Basics
+
+Docker Basics:
+Images
+Containers
+Dockerfile
+Docker Compose (Basic)
+
+Mini Project #5
+
+Employee Management REST API
+
+CRUD
+Validation
+Logging
+JWT Authentication
+SQL Server
+EF Core
+
+# Phase 5: Web Fundamentals
 
 Focus: Understand how browsers talk to servers.
 
@@ -181,59 +266,7 @@ Form Validation
 API Calls
 Dynamic UI
 
-# Phase 5: ASP.NET Core Web API
-
-Focus: Become a backend developer.
-
-API Fundamentals
-Controllers
-Routing
-Action Methods
-Return Types
-Model Binding
-Validation
-Dependency Injection
-Services
-Dependency Injection
-Service Lifetimes
-Singleton
-Scoped
-Transient
-Middleware Pipeline
-Middleware
-Custom Middleware
-Global Exception Handling
-Logging
-Entity Framework Core
-DbContext
-DbSet
-CRUD Operations
-Migrations
-Relationships
-Repository Pattern (Optional)
-Authentication & Security
-Authentication
-Authorization
-JWT
-Claims
-Role-Based Authorization
-API Documentation
-Swagger/OpenAPI
-Testing Basics
-Unit Testing
-Mocking Basics
-Mini Project #5
-
-Employee Management REST API
-
-CRUD
-Validation
-Logging
-JWT Authentication
-SQL Server
-EF Core
-
-# Phase 6: Angular
+# Phase 6: Angular (Optional)
 
 Focus: Consume APIs professionally.
 
@@ -290,3 +323,9 @@ Deployment:
 IIS / Azure
 GitHub
 CI/CD Basics
+Git
+GitHub
+Azure App Service
+Azure SQL
+Azure DevOps CI/CD
+Docker

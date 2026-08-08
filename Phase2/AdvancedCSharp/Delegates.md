@@ -153,5 +153,29 @@ I simply use: Action
 ***Interview***
 Without delegates, a method often hardcodes which methods it will call using conditions like if or switch. Every time new behavior is added, that method must be modified. Delegates solve this by allowing methods to be passed as parameters. The caller chooses the behavior, while the receiving method simply invokes it. This makes the code more reusable and aligns with the Open/Closed Principle. In modern C#, we usually use the built-in delegates Action, Func, and Predicate instead of creating custom delegates unless a custom delegate name improves readability or expresses domain-specific intent.
 
+------------------------------------------------------------------------------------
+Why ASP.NET Core cares about delegates?
+You haven't seen it yet, but ASP.NET Core uses delegates everywhere.
 
-Based on what you've learned so far, what do you think will happen if one method in the multicast delegate throws an exception before the remaining methods are executed? Think it through before trying it—that behavior is important and often comes up in interviews.
+Examples:
+
+1) Middleware
+app.Use(...);
+
+2) LINQ
+Where(...)
+Select(...)
+
+3) Events
+button.Click += ...
+
+4) Dependency Injection
+services.AddSingleton(...)
+
+5) Minimal APIs
+app.MapGet(...)
+
+6) Background Services
+Task.Run(...)
+
+You're learning the foundation that all of these rely on.

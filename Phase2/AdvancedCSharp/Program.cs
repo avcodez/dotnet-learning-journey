@@ -1,5 +1,7 @@
 ﻿Console.WriteLine("Hello, World!");
 
+Console.WriteLine("\nSignificance of Delegate: ");
+
 //Without Delegate:
 //Problem: Every time you want new behavior (SayGoodMorning, SayThanks, etc.), you must modify DoSomething().
 Delegates.RunHardcoded("Bye");
@@ -18,5 +20,15 @@ Delegates.Execute(Delegates.SendEmail);
 //Delegates.Execute((Operation)Delegates.SayHello);
 //Delegates.Execute((Action)Delegates.SayHello);
 
-//Multi Cast Delegate
+Console.WriteLine("\nMulti Cast Delegate: ");
 Delegates.ExecuteNotification();
+
+//------------------------------------------------------------------------------------------
+//Action method comparison with custom delefate with void return type
+Console.WriteLine("\nAction, Func and Predicate: ");
+DelegatesBuiltIn.ExecuteCustom(DelegatesBuiltIn.SaveFile);
+DelegatesBuiltIn.ExecuteBuiltIn(DelegatesBuiltIn.SaveFile);
+
+Console.WriteLine("\nAction<T>:");
+DelegatesBuiltIn.ExecuteCustomWithParamter(DelegatesBuiltIn.SaveFile, "AV");
+DelegatesBuiltIn.ExecuteBuiltInWithParameter(DelegatesBuiltIn.SaveFile, "VA");

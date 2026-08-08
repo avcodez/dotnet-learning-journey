@@ -11,8 +11,9 @@ Topics Covered:
 ✔ How do you ensure all subscribed methods execute?
 ✔ How do multicast delegates relate to events?
 
-You created a delegate: delegate void Operation(); and assigned one method to it.
+You created a delegate and assigned one method to it.
 
+delegate void Operation();
 Operation op = SayHello;
 op();
 
@@ -27,20 +28,20 @@ A delegate is currently storing one method reference.
 ---------------------------------------------------------------------------------
 Suppose after a user registers, your application needs to do three things.
 
-User Registered
-       │
-       ├── Send Welcome Email
-       ├── Save Audit Log
-       └── Notify Admin
+    User Registered
+        │
+        ├── Send Welcome Email
+        ├── Save Audit Log
+        └── Notify Admin
 
 Without delegates, you might write:
-void RegisterUser()
-{
-    SaveUser();
-    SendWelcomeEmail();
-    SaveAuditLog();
-    NotifyAdmin();
-}
+    void RegisterUser()
+    {
+        SaveUser();
+        SendWelcomeEmail();
+        SaveAuditLog();
+        NotifyAdmin();
+    }
 Works.
 But Management says: Also send an SMS. Now you modify RegisterUser() Again.
 Next month... Give reward points. Modify again.
