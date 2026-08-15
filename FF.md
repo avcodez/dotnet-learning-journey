@@ -140,6 +140,19 @@ Performance Basics
 Execution Plans (Basic)
 Pagination Queries
 
+CTEs
+Window Functions
+Transactions
+Indexing
+Query optimization
+Execution plans
+Deadlocks — basic understanding
+NULL behavior
+Temp tables/table variables
+EXISTS vs IN
+pagination
+troubleshooting slow queries
+
 Mini Project #3
 
 Employee Database System
@@ -234,7 +247,88 @@ JWT Authentication
 SQL Server
 EF Core
 
-# Phase 5: Web Fundamentals
+# Phase 5: Application Architecture & Enterprise Development
+
+Layered Architecture
+Separation of Concerns
+DTOs
+Entities vs DTOs
+Service Layer
+Dependency Injection
+Interfaces
+SOLID
+Repository pattern — understand, don't blindly implement
+Factory pattern
+Strategy pattern
+Adapter pattern
+Options/configuration
+Logging
+Exception handling
+Validation
+API versioning — basic
+Background services
+Configuration per environment
+Secrets management
+Feature flags — basic understanding
+
+# Phase 6: Azure
+
+Azure fundamentals:
+Resource Groups
+Subscriptions
+Regions
+RBAC
+Managed Identity
+Azure Portal
+Azure CLI basics
+
+Compute:
+App Service
+Azure Functions
+WebJobs
+Logic Apps
+Containers — basic
+
+Application dependencies:
+Storage Accounts
+Key Vault
+Application Insights
+Azure SQL
+Service Bus — basic
+Azure Configuration — basic
+
+Networking:
+VNet
+Subnets
+NSG
+Private endpoints — conceptual
+DNS — basic
+
+Monitoring:
+Application Insights
+Logs
+Metrics
+Alerts
+Application failures
+Dependency failures
+
+Deployment:
+Azure DevOps
+CI/CD
+Environments
+Variables
+Variable groups
+Approvals
+Deployment strategies
+Rollback
+
+Infrastructure automation:
+Ansible fundamentals
+Azure modules
+Idempotency
+Infrastructure automation concepts
+
+# Phase 7: Web Fundamentals
 
 Focus: Understand how browsers talk to servers.
 
@@ -266,7 +360,7 @@ Form Validation
 API Calls
 Dynamic UI
 
-# Phase 6: Angular (Optional)
+# Phase 8: Angular (Optional)
 
 Focus: Consume APIs professionally.
 
@@ -297,7 +391,7 @@ Employee CRUD
 API Integration
 JWT Handling
 
-# Phase 7: Full-Stack Production Project
+# Phase 9: Full-Stack Production Project
 Final Project
 
 Employee Management System
